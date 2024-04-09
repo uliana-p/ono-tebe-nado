@@ -72,7 +72,7 @@
 }
 .intro {
   margin-top: 91px;
-  background: url("/images/cover.jpg") no-repeat center / cover;
+  background: url("../images/cover.jpg") no-repeat center / cover;
   position: relative;
   min-height: 757px;
   z-index: -2;
@@ -178,13 +178,13 @@
   z-index: -1;
 }
 .card_type_film {
-  background: url("/images/card-lot-01.jpg") no-repeat center / cover;
+  background: url("../images/card-lot-01.jpg") no-repeat center / cover;
 }
 .card_type_book {
-  background: url("/images/card-lot-02.jpg") no-repeat center / cover;
+  background: url("../images/card-lot-02.jpg") no-repeat center / cover;
 }
 .card_type_picture {
-  background: url("/images/card-lot-03.jpg") no-repeat center / cover;
+  background: url("../images/card-lot-03.jpg") no-repeat center / cover;
 }
 .card__title {
   font-size: 22px;
