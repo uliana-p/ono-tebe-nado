@@ -11,16 +11,6 @@
   margin-top: 92px;
   font-size: 18px;
 }
-.h1 {
-  font-weight: 700;
-  font-size: 100px;
-  padding-top: 164px;
-  padding-left: 50px;
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-  margin-bottom: 135px;
-}
 
 .header__menu {
   display: grid;
@@ -28,30 +18,28 @@
 }
 .header__link_list {
   display: flex;
-  gap: 14px;
+  gap: 33px;
   flex-direction: row;
   font-weight: 400;
   margin-left: 27px;
   align-items: center;
+  padding-top: 45px;
 }
 
 .header__link-list-item {
   display: flex;
   align-items: baseline;
-  text-decoration: underline;
   text-underline-offset: 4px;
 }
 .header__link_active {
   text-decoration: none;
 }
-.header__links-list-item_bullit::before {
-  content: "";
-  width: 7px;
-  height: 7px;
-  margin-right: 12px;
-  border-radius: 100%;
-  border: 1px solid black;
+
+.header__links-list-item_bullit {
+  display: list-item;
+  list-style-type: circle;
 }
+
 .address {
   max-width: 240px;
   display: flex;
@@ -73,11 +61,15 @@
 .intro {
   margin-top: 91px;
   background: url("../images/cover.jpg") no-repeat center / cover;
-  position: relative;
-  min-height: 757px;
-  z-index: -2;
+  padding-bottom: 51px;
 }
-.intro:before {
+
+.overlay {
+  position: relative;
+  z-index: 0;
+}
+
+.overlay:before {
   content: "";
   position: absolute;
   top: 0;
@@ -87,17 +79,28 @@
   background-color: rgb(0 0 0 / 0.6);
   z-index: -1;
 }
-.text__letter-spacing_03 {
+.h1 {
+  font-weight: 700;
+  font-size: 100px;
+  padding-top: 164px;
+  padding-left: 50px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin-bottom: 135px;
+}
+
+.text__letter-spacing_s {
   letter-spacing: 0.3em;
 }
-.text__letter-spacing_06 {
+.text__letter-spacing_m {
   letter-spacing: 0.6em;
 }
-.text__line-height115 {
+.text__line-height_m {
   display: flex;
   line-height: 115px;
 }
-.text__line-height100 {
+.text__line-height_s {
   line-height: 100px;
   display: flex;
 }
@@ -117,10 +120,10 @@
   justify-content: space-between;
 }
 
-.text__word_space1 {
+.text__word_space_17 {
   word-spacing: 17px;
 }
-.text__word_space2 {
+.text__word_space_19 {
   word-spacing: 19px;
 }
 .bet-button {
@@ -143,12 +146,18 @@
   font-size: 40px;
 }
 .lots__card-list-item {
-  max-width: 334px;
+  width: 334px;
   min-height: 563px;
-  z-index: -3;
+  flex-grow: 1;
+
+  background: no-repeat center / cover;
 }
 .lots__card-list {
   display: flex;
+  flex-direction: row;
+  gap: 25px;
+  flex-wrap: wrap;
+
   justify-content: space-between;
   margin-bottom: 30px;
 }
@@ -164,27 +173,17 @@
   display: flex;
   justify-content: space-between;
   padding: 51px 40px 48px;
-  z-index: -2;
   position: relative;
 }
-.card__article:before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background-color: rgb(0 0 0 / 0.6);
-  z-index: -1;
-}
+
 .card_type_film {
-  background: url("../images/card-lot-01.jpg") no-repeat center / cover;
+  background: url("../images/card-lot-01.jpg");
 }
 .card_type_book {
-  background: url("../images/card-lot-02.jpg") no-repeat center / cover;
+  background: url("../images/card-lot-02.jpg");
 }
 .card_type_picture {
-  background: url("../images/card-lot-03.jpg") no-repeat center / cover;
+  background: url("../images/card-lot-03.jpg");
 }
 .card__title {
   font-size: 22px;
@@ -197,7 +196,7 @@
   line-height: 24px;
 }
 .lots__look-more-link {
-  padding-left: 40px;
+  margin-left: 40px;
   text-decoration: underline;
   text-underline-offset: 4px;
   font-size: 20px;

@@ -5,35 +5,32 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Оно тебе надо — аукцион вещей, в которые никто не верил</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
-      rel="stylesheet"
-    />
+
+    <link href="fonts/fonts.css" rel="stylesheet" />
     <link rel="stylesheet" href="styles/global.css" />
     <link rel="stylesheet" href="styles/style.css" />
   </head>
   <body>
     <header class="header container">
       <div class="header__menu">
-        <nav class="header__link_list">
-          <a href="#top" class="header__link-list-item header__link_active"
-            >главная</a
-          >
-          <a
-            href="#lots"
-            class="header__link-list-item header__links-list-item_bullit"
-            >посмотреть лоты</a
-          >
-          <a
-            href="#about"
-            class="header__link-list-item header__links-list-item_bullit"
-            >об аукционе</a
-          >
+        <nav>
+          <ul class="header__link_list">
+            <li class="header__link-list-item">
+              <a href="#top" class="header__link_active">главная</a>
+            </li>
+            <li class="header__link-list-item">
+              <a href="#lots" class="header__links-list-item_bullit"
+                >посмотреть лоты</a
+              >
+            </li>
+            <li class="header__link-list-item">
+              <a href="#about" class="header__links-list-item_bullit"
+                >об аукционе</a
+              >
+            </li>
+          </ul>
         </nav>
-
-        <a href="/" class="header__logo">
+        <a class="header__logo">
           <img
             class="header__logo-image"
             src="images/logo-black.svg"
@@ -42,10 +39,8 @@
             height="106"
         /></a>
         <address class="address header__address">
-          <a class="address__line" href="tel:+70000000">+9 999 555 5555</a>
-          <a class="address__line" href="mailto:mail@example.com"
-            >info@sobaka.ge</a
-          >
+          <a class="address__line" href="tel:+99995555555">+9 999 555 5555</a>
+          <a class="address__line" href="info@sobaka.ge">info@sobaka.ge</a>
           <p class="text">
             наб.&nbsp;Принсенграхт&nbsp;263-265,&nbsp;Амстердам
           </p>
@@ -53,27 +48,27 @@
       </div>
     </header>
     <main>
-      <section id="top" class="intro">
+      <section id="top" class="intro overlay">
         <h1 class="h1 text-uppercase text_white">
-          <span class="text__line-height115">
-            <span class="text__letter-spacing_03">о</span>
-            <span class="text__letter-spacing_06">но</span>
+          <span class="text__line-height_m">
+            <span class="text__letter-spacing_s">о</span>
+            <span class="text__letter-spacing_m">но</span>
           </span>
-          <span class="text__line-height100 text__padding1">
-            <span class="text__letter-spacing_03">те</span>
-            <span class="text__letter-spacing_06">бе</span>
+          <span class="text__line-height_s text__padding1">
+            <span class="text__letter-spacing_s">те</span>
+            <span class="text__letter-spacing_m">бе</span>
           </span>
-          <span class="text__line-height100 text__padding2">
-            <span class="text__letter-spacing_06">н</span>
-            <span class="text__letter-spacing_03">ад</span>
+          <span class="text__line-height_s text__padding2">
+            <span class="text__letter-spacing_m">н</span>
+            <span class="text__letter-spacing_s">ад</span>
             о
           </span>
         </h1>
         <div class="intro__footer">
           <p class="intro__text text-uppercase text_white">
-            <span class="text__white_space2">аукцион вещей, в </span>
-            <span class="text__word_space1"> которые </span>
-            <span class="text__word_space2"> никто не верил</span>
+            <span class="text__word_space_19">аукцион вещей, в </span>
+            <span class="text__word_space_17"> которые </span>
+            <span class="text__word_space_19"> никто не верил</span>
           </p>
           <button class="bet-button text-uppercase text_white">
             сделать ставку
@@ -83,12 +78,12 @@
       <section class="lots container">
         <h2 id="lots" class="lots__heading text-uppercase">лоты</h2>
         <ul class="lots__card-list">
-          <li class="lots__card-list-item card_type_film text_white">
+          <li class="lots__card-list-item card_type_film text_white overlay">
             <a href="/" class="card-link">
               <article class="card__article">
-                <p class="card__title text-uppercase">
+                <h3 class="card__title text-uppercase">
                   Фильм режиссёра, который бросил киношколу
-                </p>
+                </h3>
                 <p class="card__text">
                   Не просто бросил, а ушёл с первой лекции. Какой была бы ваша
                   ставка, если бы вы не знали, что режиссёр — Пол Томас
@@ -97,12 +92,12 @@
               </article>
             </a>
           </li>
-          <li class="lots__card-list-item card_type_book text_white">
+          <li class="lots__card-list-item card_type_book text_white overlay">
             <a href="/" class="card-link">
               <article class="card__article">
-                <p class="card__title text-uppercase">
+                <h3 class="card__title text-uppercase">
                   Книга, где описан один скучный день из жизни рекламного агента
-                </p>
+                </h3>
                 <p class="card__text">
                   Объёмом почти в тысячу страниц. Иногда без знаков препинания и
                   с переходами на древнеанглийский. В ней одновременно
@@ -114,12 +109,12 @@
               </article>
             </a>
           </li>
-          <li class="lots__card-list-item card_type_picture text_white">
+          <li class="lots__card-list-item card_type_picture text_white overlay">
             <a href="/" class="card-link">
               <article class="card__article">
-                <p class="card__title text-uppercase">
+                <h3 class="card__title text-uppercase">
                   Картина, которую повторит даже 5-летний сын маминой подруги
-                </p>
+                </h3>
                 <p class="card__text">
                   Ну действительно, там линия, тут кружочек, а здесь и вовсе
                   что-то похожее на инфузорию-туфельку. Никаких полей, лесов,
@@ -165,10 +160,8 @@
     </main>
     <footer class="footer">
       <address class="address">
-        <a class="address__line" href="tel:+70000000">+9 999 555 5555</a>
-        <a class="address__line" href="mailto:mail@example.com"
-          >info@sobaka.ge</a
-        >
+        <a class="address__line" href="tel:+99995555555">+9 999 555 5555</a>
+        <a class="address__line" href="info@sobaka.ge">info@sobaka.ge</a>
         <p class="text">наб.&nbsp;Принсенграхт&nbsp;263-265,&nbsp;Амстердам</p>
       </address>
       <nav class="footer__link_list">
@@ -186,23 +179,25 @@
           </li>
         </ul>
       </nav>
-      <ul class="footer__social-list">
-        <li class="footer__social-list-item">
-          <a href="/" class="footer__social-link">
-            <img src="images/yt.svg" alt="/" width="48" height="48" />
-          </a>
-        </li>
-        <li class="footer__social-list-item">
-          <a href="/" class="footer__social-link">
-            <img src="images/vk.svg" alt="/" width="48" height="48" />
-          </a>
-        </li>
-        <li class="footer__social-list-item">
-          <a href="/" class="footer__social-link">
-            <img src="images/pinterest.svg" alt="/" width="48" height="48" />
-          </a>
-        </li>
-      </ul>
+      <nav>
+        <ul class="footer__social-list">
+          <li class="footer__social-list-item">
+            <a href="/" target="_blank" class="footer__social-link">
+              <img src="images/yt.svg" alt="/" width="48" height="48" />
+            </a>
+          </li>
+          <li class="footer__social-list-item">
+            <a href="/" target="_blank" class="footer__social-link">
+              <img src="images/vk.svg" alt="/" width="48" height="48" />
+            </a>
+          </li>
+          <li class="footer__social-list-item">
+            <a href="/" target="_blank" class="footer__social-link">
+              <img src="images/pinterest.svg" alt="/" width="48" height="48" />
+            </a>
+          </li>
+        </ul>
+      </nav>
     </footer>
   </body>
 </html>
