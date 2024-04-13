@@ -79,7 +79,7 @@
   background-color: rgb(0 0 0 / 0.6);
   z-index: -1;
 }
-.h1 {
+.intro__title {
   font-weight: 700;
   font-size: 100px;
   padding-top: 164px;
@@ -120,10 +120,7 @@
   justify-content: space-between;
 }
 
-.text__word_space_17 {
-  word-spacing: 17px;
-}
-.text__word_space_19 {
+.intro__text {
   word-spacing: 19px;
 }
 .bet-button {
@@ -177,13 +174,13 @@
 }
 
 .card_type_film {
-  background: url("../images/card-lot-01.jpg");
+  background-image: url("../images/card-lot-01.jpg");
 }
 .card_type_book {
-  background: url("../images/card-lot-02.jpg");
+  background-image: url("../images/card-lot-02.jpg");
 }
 .card_type_picture {
-  background: url("../images/card-lot-03.jpg");
+  background-image: url("../images/card-lot-03.jpg");
 }
 .card__title {
   font-size: 22px;
